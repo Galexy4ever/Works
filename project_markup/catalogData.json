@@ -5,12 +5,12 @@
       "price": 45600
     },
     {
-      "id_product": 456,
+      "id_product": 450,
       "product_name": "Мышка",
       "price": 1000
     },
     {
-        "id_product": 123,
+        "id_product": 126,
         "product_name": "Клавиатура",
         "price": 2600
     },
