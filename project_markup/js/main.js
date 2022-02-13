@@ -9,9 +9,9 @@ const app = new Vue({
         cartUrl: '/getBasket.json',
         cartItems: [],
         filtered: [],
-        imgCart: 'https://placehold.it/50x100',
+        imgCart: 'https://upload.flado.ru/uorgs/l/001/20/120983.jpg',
         products: [],
-        imgProduct: 'https://placehold.it/200x150'
+        imgProduct: 'https://upload.flado.ru/uorgs/l/001/20/120983.jpg'
     },
     methods: {
         getJson(url){
