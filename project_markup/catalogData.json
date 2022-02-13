@@ -2,8 +2,8 @@
     {
       "id_product": 123,
       "product_name": "Ноутбук",
-      "price": 45600,
-      "img": ''
+      "price": 45600
+      
     },
     {
       "id_product": 450,
