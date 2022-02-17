@@ -1,0 +1,60 @@
+@media (max-width: 425px)
+    .center
+        padding-left: 15px
+        padding-right: 15px
+
+    #switcher:checked ~ .drop
+        top: 0
+
+    .drop
+        height: auto
+        &__icons
+            display: flex
+            justify-content: center
+        &__menu
+            width: 100%
+            padding: 16px
+
+    .header
+        &__link
+            &_img
+                display: none
+        &__link:not(:last-child)
+            margin-right: 0
+
+    .promo
+        height: 363px
+        justify-content: center
+        align-items: center
+        &__content
+            margin-top: 0
+        &__img
+            display: none
+        &__heading
+            font-size: 38px
+            line-height: 46px
+
+        &__info
+            font-size: 20px
+            line-height: 24px
+
+    .sale
+        &__top
+            flex-direction: column
+            padding-bottom: 0
+        &__item
+            margin-bottom: 32px
+            &:not(:last-child)
+                margin-right: 0
+        &__img
+            &_big
+                height: 111px
+                object-fit: cover
+
+    .product-box__content
+        justify-content: center
+
+    .footer__bottom
+        flex-direction: column-reverse
+        padding-bottom: 9px
+        padding-top: 43px

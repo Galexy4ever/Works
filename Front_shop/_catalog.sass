@@ -1,0 +1,120 @@
+=flexSB()
+    display: flex
+    justify-content: space-between
+    align-items: center
+    flex-wrap: wrap
+
+.page-info
+    height: 148px
+    background-color: #F8F3F4
+    +flexSB()
+
+summary
+    display: block
+    outline: none
+
+    &::-webkit-details-marker
+        display: none
+
+.sort-box
+    padding-top: 51px
+    padding-bottom: 64px
+    display: flex
+    &__filter
+        position: relative
+        width: $width-item
+
+.sort
+    display: flex
+    margin-left: 30px
+    padding-top: 8px
+    &__summary
+        display: flex
+    &__arrow
+        margin-left: 10px
+    &__details
+        position: relative
+        &:not(:last-child)
+            margin-right: 28px
+    &__info
+        position: absolute
+        left: -9px
+        top: calc( 100% + 5px )
+        padding: 8px 30px 8px 8px
+        background: #FFFFFF
+        box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
+        display: flex
+        flex-direction: column
+        z-index: 1
+    &__label
+        display: flex
+        align-items: center
+
+.filter
+    padding: 13px 16px 16px
+    position: absolute
+    z-index: 1
+
+    &__name
+        font-family: Lato
+        font-style: normal
+        font-weight: 600
+        font-size: 14px
+        line-height: 17px
+        color: #000000
+    &__img
+        margin-left: 11px
+    &__category
+        padding-left: 11px
+        font-family: Lato
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 17px
+        color: $colorSelect
+        height: 37px
+        line-height: 37px
+        border-left: 5px solid $colorSelect
+
+    &__ul
+        list-style-type: none
+        padding-top: 36px
+        padding-left: 11px
+    &__link
+        font-family: Lato
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 17px
+        color: #6F6E6E
+        &:hover
+            color: $colorSelect
+
+    &[open]
+        width: 360px
+        box-sizing: border-box
+        background: #FFFFFF
+        box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
+
+.breadcrumb
+    display: flex
+    &__link
+        font-family: Lato
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 17px
+        color: #636363
+        &:hover
+            color: $colorSelect
+        &:last-child
+            font-family: Lato
+            font-style: normal
+            font-weight: bold
+            font-size: 14px
+            line-height: 17px
+            color: $colorSelect
+        &:not(:last-child)::after
+            content: '/'
+            margin-left: 8px
+            margin-right: 8px
